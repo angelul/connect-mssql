@@ -34,7 +34,7 @@ module.exports = () ->
 			
 			@useUTC = config.options.useUTC if config.options?.useUTC?
 
-			@connection = new sql.Connection config
+			@connection = sql.connect config
 			@connection.on 'connect', @emit.bind(@, 'connect')
 			@connection.on 'error', @emit.bind(@, 'error')
 			@connection.connect().then =>
