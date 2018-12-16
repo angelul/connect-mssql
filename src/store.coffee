@@ -2,7 +2,7 @@
 
 sql = require 'mssql'
 
-module.exports = (session) ->
+module.exports = () ->
 	# Store = session.Store ? session.session.Store
 	
 	# class MSSQLStore extends Store
