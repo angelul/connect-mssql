@@ -1,4 +1,4 @@
-# angelul-angelul-connect-mssql
+# angelul-connect-mssql
 
 SQL Server session store for Connect/Express based on [![Github Stars][mssql-image] node-mssql][mssql-url].
 
