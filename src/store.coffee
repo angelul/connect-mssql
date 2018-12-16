@@ -3,9 +3,10 @@
 sql = require 'mssql'
 
 module.exports = (session) ->
-	Store = session.Store ? session.session.Store
+	# Store = session.Store ? session.session.Store
 	
-	class MSSQLStore extends Store
+	# class MSSQLStore extends Store
+	class MSSQLStore
 		table: '[sessions]'
 		ttl: 1000 * 60 * 60 * 24
 		autoRemove: 'never'
