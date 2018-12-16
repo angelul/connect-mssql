@@ -1,12 +1,12 @@
-# connect-mssql
+# angelul-angelul-connect-mssql
 
 SQL Server session store for Connect/Express based on [![Github Stars][mssql-image] node-mssql][mssql-url].
 
-[![NPM Version][npm-image]][npm-url] [![NPM Downloads][downloads-image]][downloads-url] [![Appveyor CI][appveyor-image]][appveyor-url]
+[![NPM Version][npm-image]][npm-url] [![NPM Downloads][downloads-image]][downloads-url]
 
 ## Installation
 
-    npm install connect-mssql
+    npm install angelul-connect-mssql
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ CREATE TABLE [dbo].[sessions](
 
 ```javascript
 var session = require('express-session');
-var MSSQLStore = require('connect-mssql')(session);
+var MSSQLStore = require('angelul-connect-mssql')(session);
 
 var config = {
     user: '...',
@@ -72,9 +72,9 @@ app.use(session({
 
 ## Configuration
 
-To see all options please visit [node-mssql docs](https://github.com/patriksimek/node-mssql#cfg-basic).
+To see all options please visit [node-mssql docs](https://github.com/angelul/node-mssql#cfg-basic).
 
-<a name="license" />
+<a name="license"></a>
 ## License
 
 Copyright (c) 2014-2016 Patrik Simek
@@ -87,14 +87,14 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[npm-image]: https://img.shields.io/npm/v/connect-mssql.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/package/connect-mssql
-[downloads-image]: https://img.shields.io/npm/dm/connect-mssql.svg?style=flat-square
-[downloads-url]: https://www.npmjs.com/package/connect-mssql
-[david-image]: https://img.shields.io/david/patriksimek/connect-mssql.svg?style=flat-square
-[david-url]: https://david-dm.org/patriksimek/connect-mssql
-[appveyor-image]: https://img.shields.io/appveyor/ci/patriksimek/connect-mssql/master.svg?style=flat-square&label=tests
-[appveyor-url]: https://ci.appveyor.com/project/patriksimek/connect-mssql
+[npm-image]: https://img.shields.io/npm/v/angelul-connect-mssql.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/angelul-connect-mssql
+[downloads-image]: https://img.shields.io/npm/dm/angelul-connect-mssql.svg?style=flat-square
+[downloads-url]: https://www.npmjs.com/package/angelul-connect-mssql
+[david-image]: https://img.shields.io/david/angelul/angelul-connect-mssql.svg?style=flat-square
+[david-url]: https://david-dm.org/angelul/angelul-connect-mssql
+[appveyor-image]: https://img.shields.io/appveyor/ci/angelul/angelul-connect-mssql/master.svg?style=flat-square&label=tests
+[appveyor-url]: https://ci.appveyor.com/project/angelul/angelul-connect-mssql
 
-[mssql-url]: https://github.com/patriksimek/node-mssql
-[mssql-image]: https://img.shields.io/github/stars/patriksimek/node-mssql.svg?style=flat-square&label=%E2%98%85
+[mssql-url]: https://github.com/angelul/node-mssql
+[mssql-image]: https://img.shields.io/github/stars/tediousjs/node-mssql.svg?style=flat-square&label=%E2%98%85

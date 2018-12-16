@@ -1,9 +1,8 @@
 {
 	"author": {
-		"name": "Patrik Simek",
-		"url": "https://patriksimek.cz"
+		"name": "Angel Velásquez"
 	},
-	"name": "connect-mssql",
+	"name": "angelul-connect-mssql",
 	"description": "SQL Server session store for Connect/Express",
 	"keywords": [
 		"database",
@@ -21,20 +20,20 @@
 		"express",
 		"connect"
 	],
-	"version": "1.5.0",
+	"version": "1.6.0",
 	"main": "lib/store.js",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/patriksimek/connect-mssql"
+		"url": "https://github.com/angelul/connect-mssql"
 	},
 	"license": "MIT",
 	"dependencies": {
-		"mssql": "^3.1.1"
+		"mssql": "4.3.0"
 	},
 	"devDependencies": {
 		"coffee-script": "^1.9.0",
-		"mocha": "^2.1.0",
-		"express-session": "*"
+		"express-session": "*",
+		"mocha": "5.2.0"
 	},
 	"engines": {
 		"node": ">=0.10"
