@@ -35,8 +35,8 @@ module.exports = () ->
 			@useUTC = config.options.useUTC if config.options?.useUTC?
 
 			@connection = sql.connect config
-			@connection.on 'connect', @emit.bind(@, 'connect')
-			@connection.on 'error', @emit.bind(@, 'error')
+			# @connection.on 'connect', @emit.bind(@, 'connect')
+			# @connection.on 'error', @emit.bind(@, 'error')
 			@connection.connect().then =>
 				if @autoRemove is 'interval'
 					@destroyExpired()
